@@ -112,6 +112,8 @@ export function activate(context: vscode.ExtensionContext): ITestHub {
 
 	registerCommand('test-explorer.sort-by-location-with-suites-first', () => testExplorer.setSortBy('byLocationWithSuitesFirst'));
 
+	registerCommand('test-explorer.sort-by-failing-suites-first', () => testExplorer.setSortBy('byFailingSuitesFirst'));
+
 	registerCommand('test-explorer.dont-sort', () => testExplorer.setSortBy(null));
 
 	return {
