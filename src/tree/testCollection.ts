@@ -235,6 +235,7 @@ export class TestCollection {
 			}
 
 			if (this.allRunningTests.size === 0) {
+				this.sort();
 				this.explorer.testRunFinished(this);
 			}
 
